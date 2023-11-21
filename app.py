@@ -32,8 +32,8 @@ def transform_text(text):
 tfidf = None
 model = None
 try:
-    if os.path.getsize('vectorizers.pkl') > 0:
-        with open('vectorizers.pkl', 'rb') as f:
+    if os.path.getsize('vectorizer.pkl') > 0:
+        with open('vectorizer.pkl', 'rb') as f:
             tfidf = pickle.load(f)
     if os.path.getsize('model.pkl') > 0:
         with open('model.pkl', 'rb') as f:
